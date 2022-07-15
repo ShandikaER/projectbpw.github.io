@@ -29,21 +29,25 @@
 </head>
 <body>
 	
-	<div class="limiter style="background-image: url('<?= base_url('assets/login/')?>images/logo.jpg');"">
+	<div class="limiter">
 		<div class="container-login100" style="background-image: url('<?= base_url('assets/login/')?>images/bg-01.jpg');">
+    <img src="<?= base_url('assets/login/')?>images/logo.jpg" alt="">
 			<div class="wrap-login100 p-t-30 p-b-50" >
 				<span class="login100-form-title p-b-41">
 					Account Login
 				</span>
-				<form class="login100-form validate-form p-b-33 p-t-5">
+				<?= $this->session->flashdata('message'); ?>
+				<form class="login100-form validate-form p-b-33 p-t-5" action="<?= base_url('auth'); ?>">
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="User name">
+						<input class="input100" type="text" id="name" name="name" value="<?= set_value('name');?>" placeholder="User name">
+						<?= form_error ('name','<small class="text-danger pl-3">','</small>'); ?>
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="password" placeholder="Password">
+						<?= form_error ('password','<small class="text-danger pl-3">','</small>'); ?>
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 
@@ -52,7 +56,12 @@
 							Login
 						</button>
 					</div>
-
+          <div class = "text-center">
+            <a   class = "small" href = "forgot-password.html">Forgot Password?</a>
+          </div>
+          <div class = "text-center">
+            <a   class = "small" href = "<?= base_url('auth/regis');?>">Create an Account!</a>
+          </div>
 				</form>
 			</div>
 		</div>
