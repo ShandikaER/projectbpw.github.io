@@ -30,8 +30,8 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#!">All Products</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Whitening Series</a></li>
-                                <li><a class="dropdown-item" href="#!">Luminous Series</a></li>
+                                <li><a class="dropdown-item" href="<?= base_url('/kategori/whitening') ?>">Whitening Series</a></li>
+                                <li><a class="dropdown-item" href="<?= base_url('/kategori/luminous') ?>">Luminous Series</a></li>
                                 <li><a class="dropdown-item" href="#!">Ultimate Series</a></li>
                                 <li><a class="dropdown-item" href="#!">Acne Series</a></li>
                                 <li><a class="dropdown-item" href="#!">White Cell DNA Series</a></li>

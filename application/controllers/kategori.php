@@ -20,13 +20,30 @@ class Kategori extends CI_Controller {
 	 */
 	function __construct() {
 		parent::__construct();
-		$this->load->model('M_product');
+		$this->load->model('M_kategori');
 	}
-    public function skincare(){
-        $data['skincare'] = $this->M_kategori->data_skincare()->result();
+    public function whitening(){
+        $data['whitening'] = $this->M_kategori->data_whitening()->result();
         $this->load->view('templates/header');
-		$this->load->view('skincare', $data);
+		$this->load->view('whitening', $data);
 		$this->load->view('templates/footer');
-
     }
+    public function acne(){
+        $data['acne'] = $this->M_kategori->data_acne()->result();
+        $this->load->view('templates/header');
+		$this->load->view('acne', $data);
+		$this->load->view('templates/footer');
+    }
+    public function ultimate(){
+        $data['ultimate'] = $this->M_kategori->data_ultimate()->result();
+        $this->load->view('templates/header');
+		$this->load->view('ultimate', $data);
+		$this->load->view('templates/footer');
+    }   
+    public function luminous(){
+        $data['luminous'] = $this->M_kategori->data_luminous()->result();
+        $this->load->view('templates/header');
+		$this->load->view('luminous', $data);
+		$this->load->view('templates/footer');
+    }   
 }

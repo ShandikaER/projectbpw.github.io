@@ -30,4 +30,11 @@ class Dashboard extends CI_Controller {
 		$this->load->view('dashboard', $data);
 		$this->load->view('templates/footer');
 	}
+
+	public function detail($id_product){
+		$data['product'] = $this->M_product->detail_product($id_product);
+		$this->load->view('templates/header');
+		$this->load->view('detail_product', $data);
+		$this->load->view('templates/footer');
+	}
 }
