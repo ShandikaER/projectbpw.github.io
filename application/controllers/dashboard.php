@@ -29,6 +29,16 @@ class Dashboard extends CI_Controller {
 		$this->load->view('templates/header');
 		$this->load->view('dashboard', $data);
 		$this->load->view('templates/footer');
+		
+	}
+
+	public function all_product()
+	{
+		$data['product'] = $this->M_product->tampil_data()->result();
+		$this->load->view('templates/header');
+		$this->load->view('all_product', $data);
+		$this->load->view('templates/footer');
+		
 	}
 
 	public function detail($id_product){

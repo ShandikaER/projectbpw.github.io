@@ -16,14 +16,14 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="<?= base_url('assets/homepage').'/img/'.$pro->gambar ?>" alt="..." style="height: 50%" />
+                            <img class="card-img-top" src="<?= base_url('assets/homepage').'/img/PaketWajahWhiteningSeries.png' ?>" alt="..." style="height: 200px" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder"><?php echo $pro->nama_product ?></h5>
+                                    <h5 class="fw-bolder">Paket Wajah Whitening Series</h5>
                                     <!-- Product price-->
-                                    <?php echo $pro->harga ?>
+                                    Rp. 300.000
                                 </div>
                             </div>
                             <!-- Product actions-->
