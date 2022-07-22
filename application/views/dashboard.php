@@ -16,19 +16,19 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="<?= base_url('assets/homepage').'/img/PaketWajahWhiteningSeries.png' ?>" alt="..." style="height: 200px" />
+                            <img class="card-img-top" src="<?= base_url('assets/homepage').'/img/'.$pro->gambar ?>" alt="..." style="height: 250px" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Paket Wajah Whitening Series</h5>
+                                    <h5 class="fw-bolder"><?php echo $pro->nama_product ?></h5>
                                     <!-- Product price-->
-                                    Rp. 300.000
+                                    <?php echo $pro->harga ?>
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href=" <?= base_url('dashboard/detail/'.$pro->id_product) ?>">View options</a></div>
+                                <div class="text-center"><a class="btn btn-primary mt-auto" href=" <?= base_url('dashboard/detail/'.$pro->id_product) ?>">Selengkapnya</a></div>
                             </div>
                         </div>
                     </div>
