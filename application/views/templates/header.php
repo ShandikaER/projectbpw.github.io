@@ -12,6 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="<?= base_url('assets/homepage')?>/css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
         
@@ -32,33 +33,9 @@
                                 <li><a class="dropdown-item" href="<?= base_url('/kategori/luminous') ?>">Luminous Series</a></li>
                                 <li><a class="dropdown-item" href="<?= base_url('/kategori/ultimate') ?>">Ultimate Series</a></li>
                                 <li><a class="dropdown-item" href="<?= base_url('/kategori/acne') ?>">Acne Series</a></li>
-                                <li><a class="dropdown-item" href="#!">White Cell DNA Series</a></li>
-                                <li><a class="dropdown-item" href="#!">Additional</a></li>
                             </ul>
-                            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Whitening Series</a></li>
-                                <li><a class="dropdown-item" href="#!">Luminous Series</a></li>
-                                <li><a class="dropdown-item" href="#!">Ultimate Series</a></li>
-                                <li><a class="dropdown-item" href="#!">Acne Series</a></li>
-                                <li><a class="dropdown-item" href="#!">White Cell DNA Series</a></li>
-                                <li><a class="dropdown-item" href="#!">Additional</a></li>
-                            </ul> -->
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                        </button>
-                    </form>
-                    <form class="" style="margin-left: 15px;">
-                        <button class="btn btn-outline-dark" type="submit">
-                            LOGIN
-                        </button>
-                    </form>
                 </div>
             </div>
         </nav>

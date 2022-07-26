@@ -1,16 +1,42 @@
 
         <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Shop in style</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+        <header class="bg-white">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block mx-auto" src="<?= base_url('assets/homepage')?>/img/Jumbotron/1.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block mx-auto" src="<?= base_url('assets/homepage')?>/img/Jumbotron/2.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block mx-auto" src="<?= base_url('assets/homepage')?>/img/Jumbotron/3.png" alt="Third slide">
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </header>
-        <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
+        <!-- Section Title Start -->
+        <div class="section-title text-center py-4">
+            <h2 style="color:#f99494">Our Product</h2>
+            <p style="color:#f99494">What's Our Produt Now ?</p>
+        </div>
+        <!-- Section Title End -->
+        <!-- Section Product Start-->
+        <section>
+            <div class="container px-4 px-lg-5 mt-2">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <?php foreach ($product as $pro) : ?>
                     <div class="col mb-5">
@@ -36,3 +62,10 @@
                 </div>
             </div>
         </section>
+        <!-- Section Product End-->
+        <!-- Section Title Start -->
+        <div class="section-title text-center py-4">
+            <h2 style="color:#f99494">Our Seller</h2>
+            <p style="color:#f99494">What's Our Produt Now ?</p>
+        </div>
+        <!-- Section Title End -->
