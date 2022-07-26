@@ -54,7 +54,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-primary mt-auto" href=" <?= base_url('dashboard/detail/'.$pro->id_product) ?>">Selengkapnya</a></div>
+                                <div class="text-center"><a class="btn btn-danger mt-auto" href=" <?= base_url('dashboard/detail/'.$pro->id_product) ?>">Selengkapnya</a></div>
                             </div>
                         </div>
                     </div>
@@ -66,6 +66,5 @@
         <!-- Section Title Start -->
         <div class="section-title text-center py-4">
             <h2 style="color:#f99494">Our Seller</h2>
-            <p style="color:#f99494">What's Our Produt Now ?</p>
         </div>
         <!-- Section Title End -->
