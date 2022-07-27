@@ -1,9 +1,9 @@
 
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="py-5" style="background-color: #979ea0;">
             <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Luminous Series</h1>
+                <div class="text-center text-black">
+                    <h1 class="display-4 fw-bolder" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Luminous Series</h1>
                 </div>
             </div>
         </header>
@@ -27,7 +27,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-primary mt-auto" href="<?= base_url('dashboard/detail/'.$pro->id_product) ?>">Selengkapnya</a></div>
+                                <div class="text-center"><a class="btn btn-danger mt-auto" href="<?= base_url('dashboard/detail/'.$pro->id_product) ?>">Selengkapnya</a></div>
                             </div>
                         </div>
                     </div>

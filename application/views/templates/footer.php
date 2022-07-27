@@ -9,12 +9,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            MS GLOW
-          </h6>
-          <p>
-            PT Kosmetika Cantik Indonesia
-          </p>
+          <img src="<?= base_url('assets/homepage')?>/assets/logo.png" alt="" style="height: 40px;">
         </div>
         <!-- Grid column -->
 
@@ -57,12 +52,7 @@
           <h6 class="text-uppercase fw-bold mb-4">
             Contact
           </h6>
-          <p><i class="bi bi-house-door me-3"></i> Jalan Komud Abdurrahman Saleh, Kel. Asrikaton,
-         Kec. Pakis, Kab. Malang, Prop. Jawa Timur</p>
-          <p>
-            <i class="bi bi-envelope me-3"></i>
-            info@msglowid.com
-          </p>
+          <p><i class="bi bi-whatsapp me-3"></i>0852-6540-8505</p>
         </div>
         <!-- Grid column -->
       </div>

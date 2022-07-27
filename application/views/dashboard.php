@@ -1,6 +1,6 @@
 
         <!-- Header-->
-        <header class="bg-white">
+        <header class="py-3">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -64,7 +64,23 @@
         </section>
         <!-- Section Product End-->
         <!-- Section Title Start -->
+
+        <!-- Section Title End -->
+        <div class="section-title text-center py-4 px-lg-5">
+            <h2 style="color:#f99494">Sukses Bersama Join Seller Resmi MS Glow</h2>
+        </div>
+        <div class="text-center">
+            <img src="<?= base_url('assets/homepage')?>/img/benefitreseller.png" alt="" style="height: 600px;">
+        </div>
         <div class="section-title text-center py-4">
             <h2 style="color:#f99494">Our Seller</h2>
         </div>
-        <!-- Section Title End -->
+        <div class="text-center">
+            <img src="<?= base_url('assets/homepage')?>/img/reseller.png" alt="" style="height: 600px;">
+            <div class="d-flex justify-content-center py-3">
+                <a href="https://wa.me/6285265408505?text=Saya%20tertarik%20dengan%20barang%20Anda%20yang%20dijual" class="btn btn-success btn-lg active" role="button" aria-pressed="true">
+                    <i class="bi bi-whatsapp me-1"></i>
+                        Join Sekarang
+                </a>
+            </div>
+        </div>

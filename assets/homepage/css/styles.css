@@ -62,7 +62,7 @@
 	--bs-body-font-weight: 400;
 	--bs-body-line-height: 1.5;
 	--bs-body-color: #212529;
-	--bs-body-bg: #fff;
+	--bs-body-bg: #db5252;
 }
 
 *,
@@ -12239,54 +12239,4 @@ fieldset:disabled .btn {
 		display: none !important;
 	}
 
-	#slider-hero-nav .owl-prev,
-	#slider-hero-nav .owl-next {
-		position: absolute;
-		top: 50%;
-		z-index: 10;
-		border: none;
-		background-color: #15477A;
-		color: #fff;
-		outline: none;
-		padding: 10px 25px;
-		font-size: 20px;
-		transition: background-color 0.3s;
-	}
-
-	#slider-hero-nav .owl-prev {
-		left: 0;
-		border-radius: 0 50px 50px 0;
-	}
-
-	#slider-hero-nav .owl-next {
-		right: 0;
-		border-radius: 50px 0 0 50px;
-	}
-
-	#slider-hero-nav .owl-prev:hover,
-	#slider-hero-nav .owl-next:hover {
-		cursor: pointer;
-		background-color: #f2c808;
-	}
-
-	#hero-area .slider-item-content {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background-color: rgba(255, 255, 255, 0.7);
-		padding: 20px;
-		text-align: center;
-		font-family: Raleway, 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		width: 50%;
-	}
-
-	#hero-area .slider-item-content h2 {
-		font-size: 32px;
-		font-weight: 500;
-	}
-
-	#hero-area .slider-item-content P {
-		font-size: 16px;
-	}
 }
