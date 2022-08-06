@@ -78,7 +78,7 @@
         <div class="text-center">
             <img src="<?= base_url('assets/homepage')?>/img/reseller.png" alt="" style="height: 600px;">
             <div class="d-flex justify-content-center py-3">
-                <a href="https://wa.me/6285265408505?text=Saya%20tertarik%20dengan%20barang%20Anda%20yang%20dijual" class="btn btn-success btn-lg active" role="button" aria-pressed="true">
+                <a href="https://wa.me/6285265408505" class="btn btn-success btn-lg active" role="button" aria-pressed="true">
                     <i class="bi bi-whatsapp me-1"></i>
                         Join Sekarang
                 </a>

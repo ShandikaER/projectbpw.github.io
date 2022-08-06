@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://projectbpw.github.io.test/';
+$config['base_url'] = 'http://project_bpw_kel2a.test/';
 
 /*
 |--------------------------------------------------------------------------

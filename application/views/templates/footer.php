@@ -41,7 +41,7 @@
             Profile
           </h6>
           <p>
-            <a href="#!" class="text-reset">About Us</a>
+            <a href="<?= base_url('/dashboard/about_us') ?>" class="text-reset">About Us</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -52,7 +52,8 @@
           <h6 class="text-uppercase fw-bold mb-4">
             Contact
           </h6>
-          <p><i class="bi bi-whatsapp me-3"></i>0852-6540-8505</p>
+          <p class="bi bi-whatsapp me-3"><a href="https://wa.me/6285265408505">  0852-6540-8505</a></p>
+          <p class="bi bi-instagram me-3" ><a href="https://www.instagram.com/ranjani.id/">  @ranjani.id</a></p>
         </div>
         <!-- Grid column -->
       </div>

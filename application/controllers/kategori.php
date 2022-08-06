@@ -24,35 +24,39 @@ class Kategori extends CI_Controller
 		parent::__construct();
 		$this->load->model('M_kategori');
 	}
-	public function index()
-	{
-		var_dump("test");
-	}
 	public function whitening()
 	{
-		$data['whitening'] = $this->M_kategori->data_whitening()->result();
-		$this->load->view('templates/header');
+		$data = array(
+			'title' => "Kategori",
+			'whitening' => $this->M_kategori->data_whitening()->result());
+		$this->load->view('templates/header', $data);
 		$this->load->view('kategori/whitening', $data);
 		$this->load->view('templates/footer');
 	}
 	public function acne()
 	{
-		$data['acne'] = $this->M_kategori->data_acne()->result();
-		$this->load->view('templates/header');
+		$data = array(
+			'title' => "Kategori",
+			'acne' => $this->M_kategori->data_acne()->result());
+		$this->load->view('templates/header', $data);
 		$this->load->view('kategori/acne', $data);
 		$this->load->view('templates/footer');
 	}
 	public function ultimate()
 	{
-		$data['ultimate'] = $this->M_kategori->data_ultimate()->result();
-		$this->load->view('templates/header');
+		$data = array(
+			'title' => "Kategori",
+			'ultimate' => $this->M_kategori->data_ultimate()->result());
+		$this->load->view('templates/header', $data);
 		$this->load->view('kategori/ultimate', $data);
 		$this->load->view('templates/footer');
 	}
 	public function luminous()
 	{
-		$data['luminous'] = $this->M_kategori->data_luminous()->result();
-		$this->load->view('templates/header');
+		$data = array(
+			'title' => "Kategori",
+			'luminous' => $this->M_kategori->data_luminous()->result());
+		$this->load->view('templates/header', $data);
 		$this->load->view('kategori/luminous', $data);
 		$this->load->view('templates/footer');
 	}

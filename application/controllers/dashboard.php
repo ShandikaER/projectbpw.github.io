@@ -25,25 +25,29 @@ class Dashboard extends CI_Controller {
 	
 	 public function index()
 	{
-		$data['product'] = $this->M_product->tampil_data()->result();
-		$this->load->view('templates/header');
+		$data = array(
+			'title' => "MS GLOW",
+			'product' => $this->M_product->tampil_data()->result());
+		$this->load->view('templates/header', $data);
 		$this->load->view('dashboard', $data);
 		$this->load->view('templates/footer');
 		
 	}
 
-	public function all_product()
+	public function about_us()
 	{
-		$data['product'] = $this->M_product->tampil_data()->result();
-		$this->load->view('templates/header');
-		$this->load->view('all_product', $data);
+		$data['title'] = "About Us";
+		$this->load->view('templates/header', $data);
+		$this->load->view('about_us');
 		$this->load->view('templates/footer');
 		
 	}
 
 	public function detail($id_product){
-		$data['product'] = $this->M_product->detail_product($id_product);
-		$this->load->view('templates/header');
+		$data = array(
+			'title' => "Detail Produk",
+			'product' => $this->M_product->detail_product($id_product));
+		$this->load->view('templates/header', $data);
 		$this->load->view('detail_product', $data);
 		$this->load->view('templates/footer');
 	}
